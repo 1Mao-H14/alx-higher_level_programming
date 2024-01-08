@@ -1,3 +1,2 @@
 #!/bin/bash
-python3 $PYFILE
-this the first project 
+python3 $PYFILE 
