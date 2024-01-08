@@ -4,7 +4,7 @@ if [ -z $PYFILE ];
 then
 echo -e "the file $PYFILE dosenot existe"
 exit 1
-fi 
+fi
 if [ ! -f $PYFILE ];
 then
 echo " $PYFILE not a file "
