@@ -1,3 +1,2 @@
 #!/bin/bash
-if[ -z $PYFILE ];{echo -e "the file $PYFILE dosenot exist"};exit 1 ;fi
-if[ ! -f $PYFILE ];{echo -e" $PYFILE not a file "};exit 1 ;fi&&python3 "$PYFILE"
+python3 $PYFILE
