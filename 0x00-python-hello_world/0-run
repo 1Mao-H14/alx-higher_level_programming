@@ -1,4 +1,3 @@
 #!/bin/bash
-[ -z $PYFILE ];&&{echo -e "the file $PYFILE dosenot exist"; exit 1;}
-[ ! -f $PYFILE ];&&{echo -e" $PYFILE not a file ";exit 1;}
-python3 "$PYFILE"
+if[ -z $PYFILE ];{echo -e "the file $PYFILE dosenot exist"};exit 1 ;fi
+if[ ! -f $PYFILE ];{echo -e" $PYFILE not a file "};exit 1 ;fi&&python3 "$PYFILE"
