@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memset - FILL A BLOCk of MEMORY value
- * @s: INPUT address of memory 
+ * @s: INPUT address of memory
  * @b: INPUT OF the value
  * @n: NUM of BYTES to be CHANG
  *
