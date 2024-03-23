@@ -9,4 +9,6 @@ def best_score(a_dictionary):
             list.append(v)
         s_list = sorted(list)
         max_value = s_list[-1]
-        return max_value
+        for i, v in a_dictionary.items():
+            if max_value == v:
+                return i
