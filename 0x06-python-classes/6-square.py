@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''that defines a square'''
+"""
+A module that defines a Square class.
+"""
 
 
 class Square:
@@ -39,7 +41,7 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Sets the size of the square.
+       Sets the size of the square.
 
         Args:
             value (int): The size to set.
@@ -51,8 +53,7 @@ class Square:
         if isinstance(value, int):
             if value < 0:
                 raise ValueError('size must be >= 0')
-            else:
-                self.__size = value
+            self.__size = value
         else:
             raise TypeError('size must be an integer')
 
@@ -76,11 +77,14 @@ class Square:
 
         Raises:
             TypeError: If position is not a tuple of 2 positive integers.
-        """
+"""
         if isinstance(value, tuple) and len(value) == 2:
-            if all(isinstance(i, int) for i in value):
-                if all(i >= 0 for i in value):
-                    self.__position = value
+            for i in value:
+                if all(isinstance(i, int)):
+                    if and all(i >= 0 for i in value):
+                        self.__position = value
+            else:
+                raise TypeError('position must be a tuple of 2 positive integers')
         else:
             raise TypeError('position must be a tuple of 2 positive integers')
 
@@ -98,8 +102,8 @@ class Square:
         Prints the square with the character '#'.
 
         If size is 0, it prints an empty line.
-        The positionprinting the appropriate numberleading spaces newlines.
-        """
+        The position is respected by printing the appropriate number of leading spaces and newlines.
+       """
         if self.__size == 0:
             print()
         else:
