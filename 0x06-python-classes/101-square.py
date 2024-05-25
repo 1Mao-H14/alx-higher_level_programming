@@ -120,7 +120,7 @@ class Square:
             str: The string representation of the square.
         """
         if self.__size == 0:
-            return '\n'
+            return ''
         result = ''
         for _ in range(self.__position[1]):
             result += '\n'
