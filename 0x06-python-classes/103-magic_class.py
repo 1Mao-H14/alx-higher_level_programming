@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+A MODULE FOR Square
+'''
 import math
 
 
