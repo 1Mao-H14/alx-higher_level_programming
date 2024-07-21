@@ -1,5 +1,6 @@
 
 """
+A module thats add integers
 >>> add_integer = __import__('0-add_integer').add_integer
 
 
@@ -41,4 +42,3 @@ Traceback (most recent call last):
 ValueError: cannot convert float NaN to integer
 
 """
-
