@@ -1,6 +1,5 @@
 
 """
-A module thats add integers
 >>> add_integer = __import__('0-add_integer').add_integer
 
 
@@ -40,5 +39,4 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 Traceback (most recent call last):
     ...
 ValueError: cannot convert float NaN to integer
-
 """
