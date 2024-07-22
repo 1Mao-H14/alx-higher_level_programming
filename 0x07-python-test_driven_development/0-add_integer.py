@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" A module thats adds integrs """
 
 def add_integer(a, b=98):
     """
