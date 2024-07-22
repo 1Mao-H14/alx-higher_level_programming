@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" A module thats adds integrs 
+""" A module thats adds integrs
 Functions:
     add_integer(a, b): a function thats returns the sum of a and b
 
 """
+
 
 def add_integer(a, b=98):
     """
