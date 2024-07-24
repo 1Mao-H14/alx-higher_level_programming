@@ -9,7 +9,6 @@ A module thats devide integer of a matrix
 
 
 def matrix_divided(matrix, div):
-    erure = 'matrix must be a matrix (list of lists) of integers/floats'
     """
     a function thats devides integrs of matrix in lists
     
@@ -26,6 +25,8 @@ def matrix_divided(matrix, div):
         ZeroDivisionError: division by zero
 
     """
+        erure = 'matrix must be a matrix (list of lists) of integers/floats'
+
     for le in range(len(matrix) - 1):
         if len(matrix[le]) != len(matrix[le + 1]):
             raise TypeError('Each row of the matrix must have the same size')
