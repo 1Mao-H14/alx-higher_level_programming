@@ -10,8 +10,10 @@ A module thats devide integer of a matrix
 
 def matrix_divided(matrix, div):
     erure = 'matrix must be a matrix (list of lists) of integers/floats'
-    """function thats devides integrs of matrix
-
+    """
+    a function thats devides integrs of matrix in lists
+    
+    Args:
         matrix ( ist) : the matrix
         div (float) : the integr to be devided
     
