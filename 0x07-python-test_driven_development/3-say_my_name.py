@@ -2,8 +2,11 @@
 """
 A module thats thats print strings
     Functions:
-        say_my_name(first_name, last_name=""): a function thats print name last name
+        say_my_name(first_name, last_name=""): a function 
+        thats print name last name
 """
+
+
 def say_my_name(first_name, last_name=""):
     """
     A function thats prints My name is <first name> <last name>
@@ -13,11 +16,11 @@ def say_my_name(first_name, last_name=""):
     Returns:
         return nothing
     Raises:
-        TypeError: in case of the first_name or the first string is not string 
+        TypeError: in case of the first_name or the first string is not string
 
     """
-    if not(isinstance(first_name, str)):
+    if not (isinstance(first_name, str)):
         raise TypeError('first_name must be a string')
-    elif not(isinstance(last_name, str)):
+    elif not (isinstance(last_name, str)):
         raise TypeError('last_name must be a string')
     print('My name is {} {}'.format(first_name, last_name))
