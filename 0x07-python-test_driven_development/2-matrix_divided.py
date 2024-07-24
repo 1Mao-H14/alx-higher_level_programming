@@ -28,7 +28,7 @@ def matrix_divided(matrix, div):
             raise TypeError('Each row of the matrix must have the same size')
     ls2 = []
     if not(isinstance(matrix, list)):
-        raise TypeError()
+        raise TypeError(erure)
     else:
         for i in matrix:
             ls1 = []
@@ -41,8 +41,9 @@ def matrix_divided(matrix, div):
                     else:
                         if (div == 0):
                             raise ZeroDivisionError('division by zero')
-                        n = float(j / div)
-                        val = round(n, 2)
-                        ls1.append(val)
-                    ls2.append(ls1)
-            return ls2
+                        else:
+                            n = float(j / div)
+                            val = round(n, 2)
+                            ls1.append(val)
+            ls2.append(ls1)
+        return ls2
