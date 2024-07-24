@@ -26,16 +26,16 @@ def matrix_divided(matrix, div):
         if len(matrix[le]) != len(matrix[le + 1]):
             raise TypeError('Each row of the matrix must have the same size')
     ls2 = []
-    if not(isinstance(matrix, list)):
+    if not (isinstance(matrix, list)):
         raise TypeError(erure)
     else:
         for i in matrix:
             ls1 = []
-            if not(isinstance(i, list)):
+            if not (isinstance(i, list)):
                 raise TypeError(erure)
             else:
                 for j in i:
-                    if not(isinstance(j, (float, int))):
+                    if not (isinstance(j, (float, int))):
                         raise TypeError(erure)
                     else:
                         if (div == 0):
