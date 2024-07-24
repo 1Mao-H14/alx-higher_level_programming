@@ -10,13 +10,14 @@ A module thats devide integer of a matrix
 
 def matrix_divided(matrix, div):
     erure = 'matrix must be a matrix (list of lists) of integers/floats'
-    """
-    function thats devides integrs of matrix
+    """function thats devides integrs of matrix
 
-        matrix(list) : the matrix
-        div(float) : the integr to be devided
-    Return :
+        matrix ( ist) : the matrix
+        div (float) : the integr to be devided
+    
+    Returns:
         new matrix of devide integrs
+
     Raises:
         TypeError: Each row of the matrix must have the same size
         TypeError: matrix must be a matrix (list of lists) of integers/floats
