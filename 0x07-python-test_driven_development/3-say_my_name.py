@@ -2,7 +2,7 @@
 """
 A module thats thats print strings
     Functions:
-        say_my_name(first_name, last_name=""): a function 
+        say_my_name(first_name, last_name=""): a function
         thats print name last name
 """
 
