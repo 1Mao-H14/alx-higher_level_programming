@@ -58,6 +58,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 >>> print(matrix_divided(matrix, float('inf')))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
+
 >>> matrix = [
 ...     [1, "2", 3],
 ...     [4, "5", 6]
@@ -68,17 +69,10 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix = [
-...     [1, 2, 3],
-...     [4, 5, 6]
+...    [1, 2, 3],
+...    [4, float('inf'), float('nan')]
 ... ]
->>> print(matrix_divided(matrix, float('inf')))
-Traceback (most recent call last):
-  ...
-ValueError: could not convert string to float: 'inf / nan'
+>>> print(matrix_divided(matrix, 2))
+[[0.5, 1.0, 1.5], [2.0, inf, nan]]
 
->>> matrix = [[float('inf/nan')]]
->>> print(matrix_divided(matrix, 3))
-Traceback (most recent call last):
-  ...
-ValueError: could not convert string to float: 'inf/nan'
 """

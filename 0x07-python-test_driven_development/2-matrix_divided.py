@@ -31,7 +31,7 @@ def matrix_divided(matrix, div):
     else:
         for i in matrix:
             ls1 = []
-            if not(isinstance(i, list)) or (i == “9”):
+            if not(isinstance(i, list)):
                 raise TypeError(erure)
             else:
                 for j in i:
