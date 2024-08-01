@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python3
 """
 a mudule thats do  matrix multiplication
     Functions:
