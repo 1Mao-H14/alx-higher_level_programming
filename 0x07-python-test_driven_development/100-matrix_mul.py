@@ -60,7 +60,7 @@ def matrix_mul(m_a, m_b):
             raise TypeError('each row of m_a must be of the same size')
     for i in range(len(m_b) - 1):
         if len(m_b[i]) != len(m_b[i+1]):
-            raise TypeError('each row of m_a must be of the same size')
+            raise TypeError('each row of m_b must be of the same size')
 
     # multiplication
     rows_A = len(m_a)
