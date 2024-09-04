@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 class Rectangle:
-    """ A class Rectangle thats do nothing"""
+    """ A class representing a Rectangle thats do nothing"""
     pass
