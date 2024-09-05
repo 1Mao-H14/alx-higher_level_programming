@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ defines Rectangle class """
 
+
 class Rectangle:
     """
     Class Rectangle that defines a rectangle
@@ -49,13 +50,14 @@ class Rectangle:
             ValueError : if the value is < 0
             TypeError: if value is not an integer
         """
-        if (type(value) == int):
+        if (isinstance(value, int)):
             if (value >= 0):
                 self.__width = value
             else:
                 raise ValueError('width must be >= 0')
         else:
             raise TypeError('width must be an integer')
+
     @height.setter
     def height(self, value):
         """
@@ -66,7 +68,7 @@ class Rectangle:
             ValueError : if the value is < 0
             TypeError: if value is not an integer
         """
-        if (type(value) == int):
+        if (type(value) is int):
             if (value >= 0):
                 self.__height = value
             else:
