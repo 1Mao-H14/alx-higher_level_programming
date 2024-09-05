@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ defines Rectangle class """
 
+
 class Rectangle:
     """
     Class Rectangle that defines a rectangle
@@ -56,6 +57,7 @@ class Rectangle:
                 raise ValueError('width must be >= 0')
         else:
             raise TypeError('width must be an integer')
+
     @height.setter
     def height(self, value):
         """
@@ -89,7 +91,7 @@ class Rectangle:
         Returns:
              int : the perimeter of a Rectangle
         """
-        if (self.__height == 0 or self.__width ) == 0:
+        if (self.__height == 0 or self.__width) == 0:
             return 0
         else:
             return (2*(self.__height + self.__width))
