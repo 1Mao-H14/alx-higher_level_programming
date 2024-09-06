@@ -9,7 +9,8 @@ class Rectangle:
 
         width (int): the width of the rectangle
         height (int): the height of the rectangle
-        number_of_instances (int): class att (the numbre of instance created)
+        number_of_instances (int) : class attribut (the numbre of instance)
+
 
     """
     number_of_instances = 0
@@ -24,7 +25,6 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-
     """ widht and height getter """
     @property
     def width(self):
@@ -130,6 +130,7 @@ class Rectangle:
         deleting the object
 
         Returns:
-            nothing (NONE)
+                nothing (NONE)
         """
+        Rectangle.number_of_instances -= 1
         print('Bye rectangle...')
