@@ -4,9 +4,8 @@
 """
     A module thats containes the is_same_class function
     Function:
-    is_same_class(obj, a_class) : returns if the object is exactly an instance of the 
-    specified class ;
-    otherwise False
+        is_same_class(obj, a_class) : returns if the object is exactly an instance of the 
+        specified class ;otherwise False
 
 """
 
