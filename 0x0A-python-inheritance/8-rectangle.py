@@ -3,14 +3,12 @@
 # Dynamically import BaseGeometry from '7-base_geometry.py'
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-"""8-rectangle.py
-This module defines a Rectangle class that inherits from BaseGeometry.
+"""A Module that's containes BaseGeometry
 """
 
+
 class Rectangle(BaseGeometry):
-    """Rectangle class that inherits from BaseGeometry.
-    Validates width and height using integer_validator from BaseGeometry.
-    """
+    """ BaseGeometry class """
 
     def __init__(self, width, height):
         """Initializes a Rectangle instance.
