@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 BaseGeometry = __import__(7-base_geometry.py).BaseGeometry
-
-"""A Module thats containes Rctangle class
+"""8-rectangle.py
 """
 
 
