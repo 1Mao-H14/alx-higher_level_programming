@@ -13,7 +13,7 @@ class BaseGeometry:
         exception depending on the value entred
         Args:
             name(str): name argument
-            value(str or ) : value arguement
+            value(st) : value arguement
         Return:
             None: besicaly nothing
         Raises:
@@ -21,10 +21,10 @@ class BaseGeometry:
             ValueError : if value is less or equal to 0
         """
 
-        if type(self.value) is not int:
-            raise TypeError('{} must be an integer'.format(self.name))
-        elif (self.value <= 0):
-            raise ValueError('{} must be greater than 0')
+        if type(value) is not int:
+            raise TypeError('{} must be an integer'.format(name))
+        elif (value <= 0):
+            raise ValueError('{} must be greater than 0'.format(value))
 
     def area(self):
         """ raises an Exception """
