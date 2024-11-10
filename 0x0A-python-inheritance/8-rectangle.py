@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
-# Dynamically import BaseGeometry from '7-base_geometry.py'
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
 """A Module that's containes BaseGeometry
 """
+# Dynamically import BaseGeometry from '7-base_geometry.py'
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
