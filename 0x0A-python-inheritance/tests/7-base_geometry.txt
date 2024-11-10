@@ -27,7 +27,9 @@ ValueError: distance must be greater than 0
 
 ========= 2 - bad use function ========
 >>> bg.area()
-area() is not implemented
+Traceback (most recent call last):
+	...
+Exception: area() is not implemented
 
 >>> bg.integer_validator()
 Traceback (most recent call last):
