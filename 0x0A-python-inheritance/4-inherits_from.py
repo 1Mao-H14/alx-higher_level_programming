@@ -9,7 +9,11 @@ instance of a class that
 inherits from a specified class (but not the class itself).
 
 Function:
-    inherits_from(obj, a_class)
+    inherits_from(obj, a_class):
+        Returns `True` if `obj` is an instance of a
+        class that inherits from `a_class`,and `False
+        if it is either not an instance
+        or is exactly an instance of `a_class`.
 
 Args:
     obj (object): The object
