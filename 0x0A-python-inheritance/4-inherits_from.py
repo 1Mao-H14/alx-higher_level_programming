@@ -2,6 +2,7 @@
 
 """
 A Module thats containes is_kind_of_class(obj, a_class) function
+
 """
 
 
