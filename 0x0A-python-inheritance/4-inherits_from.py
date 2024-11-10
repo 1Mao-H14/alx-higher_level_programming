@@ -20,12 +20,15 @@ Returns:
 but not `a_class` itself.
 """
 
+
 def inherits_from(obj, a_class):
     """
-    Returns True if `obj` is an 
+    Returns True if `obj` is an
     instance of a subclass of `a_class`
     ,but not `a_class` itself.
     """
     if isinstance(obj, a_class):
-        return type(obj) != a_class and issubclass(type(obj), a_class)
-    return False
+        if ((type(obj) is not a_class) and (issubclass(type(obj), a_class))):
+            return True
+    else:
+        return False
