@@ -50,7 +50,7 @@ TypeError: None must be an integer
 >>> bg.integer_validator("my_int", (2,))
 Traceback (most recent call last):
 	...
-TypeEirror: my_int must be an integer
+TypeError: my_int must be an integer
 
 >>> bg.integer_validator(“age”, [3])
 Traceback (most recent call last):
