@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A Module thats containes is_kind_of_class(obj, a_class) function
+A Module thats containes inherits_from(obj, a_class) function
 
 """
 
