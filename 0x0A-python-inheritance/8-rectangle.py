@@ -22,6 +22,6 @@ class Rectangle(BaseGeometry):
         """
         super().integer_validator("width", width)  # Validate width
         super().integer_validator("height", height)  # Validate height
-        
+
         self.__width = width  # Private width attribute
         self.__height = height  # Private height attribute
