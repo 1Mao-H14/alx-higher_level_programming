@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+
 # Importing the Rectangle class from an external file
+
 Rectangle = __import__('10-square.py').Rectangle
 
 """
