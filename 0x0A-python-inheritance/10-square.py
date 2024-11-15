@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Square class that inherits from Rectangle.
 
-Defines the `Square` class, which represents a square and inherits from `Rectangle`.
+Defines the `Square` class, which represents a square and inherits
 """
 
 Rectangle = __import__('9-rectangle').Rectangle
