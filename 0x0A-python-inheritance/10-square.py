@@ -6,6 +6,7 @@ Defines the `Square` class, which represents a square and inherits
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """Represents a square.
 
@@ -19,7 +20,7 @@ class Square(Rectangle):
     def __init__(self, size):
         """Initialize the square.
 
-        Validates `size` and initializes the parent `Rectangle` class with the same value for width and height.
+        Validates `size` and initializes the parent `Rectangle`
 
         Args:
             size (int): The side length of the square.
