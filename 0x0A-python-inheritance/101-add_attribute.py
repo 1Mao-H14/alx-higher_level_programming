@@ -28,8 +28,8 @@ def add_attribute(obj, att, val):
     """
     if isinstance(obj, (int, str, tuple, float)):
         raise TypeError("can't add new attribute")
-
-    if hasattr(obj.__class__, '__slots__') and att not in type(obj).__slots__:
+            print('first loop')
+    if hasattr(obj.__class__, '__slots__') and ( att not in type(obj).__slots__ ):
         raise TypeError("can't add new attribute")
-
+            print('second loop')
     setattr(obj, att, val)
