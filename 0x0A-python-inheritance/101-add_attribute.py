@@ -2,6 +2,8 @@
 """a function that adds a new attribute to an object if it’s possible:
 Raise a TypeError exception, with the message can't add new attribute
 """
+
+
 def add_attribute(obj, att, val):
     """
     Adds an attribute to an object if allowed.
@@ -16,7 +18,7 @@ def add_attribute(obj, att, val):
         val: The value of the attribute.
 
     Raises:
-        TypeError: If the object is immutable or if the attribute 
+        TypeError: If the object is immutable or if the attribute
 
     Example:
         class MyClass: pass
@@ -31,4 +33,3 @@ def add_attribute(obj, att, val):
         raise TypeError("can't add new attribute")
 
     setattr(obj, att, val)
-
