@@ -29,6 +29,7 @@ def add_attribute(obj, att, val):
     if (type(obj) in (int, str, tuple, float)):
         raise TypeError("can't add new attribute")
 
-    if hasattr(obj.__class__, '__slots__') and ( att not in type(obj).__slots__ ):
-        raise TypeError("can't add new attribute")
+    if hasattr(obj.__class__, '__slots__'):
+        if (att not in type(obj).__slots__):
+            raise TypeError("can't add new attribute")
     setattr(obj, att, val)
