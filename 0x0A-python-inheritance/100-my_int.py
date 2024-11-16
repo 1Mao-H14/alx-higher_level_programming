@@ -10,14 +10,13 @@ class MyInt(int):
     Args:
         int (int): value
     """
-
-    def __init__(self, num):
+    def __init__(self, value):
         """Creates new instances of class MyInt.
 
         Args:
             value (int): integer.
         """
-        self.num = num
+        self.__value = value
 
     def __eq__(self, other):
         """The method equal
@@ -28,8 +27,7 @@ class MyInt(int):
         Returns:
             boolean: True or False.
         """
-        if self.num == other.num:
-            return False
+        return self.__value != other
 
     def __ne__(self, other):
         """The method not equal
@@ -40,6 +38,4 @@ class MyInt(int):
         Returns:
             boolean: True or False
         """
-
-        if self.num =! other.num:
-            return True
+        return self.__value == other
