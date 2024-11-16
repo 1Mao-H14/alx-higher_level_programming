@@ -3,6 +3,7 @@
 MyInt is a rebel. MyInt has == and != operators inverted
 """
 
+
 class MyInt(int):
     """Defines a class MyInt.
 
@@ -17,6 +18,7 @@ class MyInt(int):
             value (int): integer.
         """
         self.num = num
+
     def __eq__(self, other):
         """The method equal
 
@@ -28,6 +30,7 @@ class MyInt(int):
         """
         if self.num == other.num:
             return False
+
     def __ne__(self, other):
         """The method not equal
 
@@ -37,5 +40,6 @@ class MyInt(int):
         Returns:
             boolean: True or False
         """
+
         if self.num =! other.num:
-            return True 
+            return True
