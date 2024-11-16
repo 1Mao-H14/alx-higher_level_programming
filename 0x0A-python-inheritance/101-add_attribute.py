@@ -27,9 +27,8 @@ def add_attribute(obj, att, val):
         print(obj.name)  # Outputs: Alice
     """
     if (type(obj) in (int, str, tuple, float)):
-        print('first loop')
         raise TypeError("can't add new attribute")
+
     if hasattr(obj.__class__, '__slots__') and ( att not in type(obj).__slots__ ):
-        print('second loop')
         raise TypeError("can't add new attribute")
     setattr(obj, att, val)
