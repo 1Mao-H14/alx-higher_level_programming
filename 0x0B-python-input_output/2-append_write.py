@@ -3,7 +3,6 @@
 A MODULE Thats containes append_write function
 """
 
-
 def append_write(filename="", text=""):
     """"
     append_write : that appends a string at the end of a text file
