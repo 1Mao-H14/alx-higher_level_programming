@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A MODULE Thats containes append_write function
+A module containing the append_write function to append text to a file.
 """
 
 
