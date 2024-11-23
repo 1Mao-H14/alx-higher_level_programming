@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A MODULE Thats containes append_write function
+A MODULE Thats containes read_file function
 """
 
 
