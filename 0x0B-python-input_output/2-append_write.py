@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""A Module containing the append_write function to append text to a file."""
+"""Module containing the function append_write"""
 
 
 def append_write(filename="", text=""):
