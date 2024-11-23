@@ -7,7 +7,7 @@ A MODULE Thats containes read_file function
 
 def write_file(filename="", text=""):
     """
-    A Function that writes a string to a text file (UTF8) and returns the number of characters written:
+    A Function that writes a string to a text file (UTF8) returns the number of chars
     Args:
 
     filename(str): the file name
@@ -16,6 +16,6 @@ def write_file(filename="", text=""):
     Return:
         int : the length of the text file
     """
-    with open(filename, mode = 'w', encoding = 'utf-8') as f:
+    with open(filename, mode='w', encoding='utf-8') as f:
         f.write(text)
         return len(text)
