@@ -5,7 +5,7 @@ A MODULE Thats containes read_file function
 """
 
 
-def write_file(filename="", text=""):
+sh: 1: q: not found
     """
     A Function that writes a string to returns the number of chars
     Args:
