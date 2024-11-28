@@ -16,5 +16,5 @@ def append_write(filename="", text=""):
     with open(filename, mode='a+', encoding='utf-8') as f:
         wr_t = f.write(text)
         f.seek(0)
-        ln_txt = len(text))
+        ln_txt = len(text)
         return ln_txt
