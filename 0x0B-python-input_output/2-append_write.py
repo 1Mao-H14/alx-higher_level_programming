@@ -10,6 +10,6 @@ def append_write(filename="", text=""):
         text (str) : the text written
     Returns:
         int : the numbers of text appended"""
-    with open(filename, 'a+', encoding = 'utf-8') as f:
+    with open(filename, 'a+', encoding='utf-8') as f:
         f.write(text)
     return len(text)
