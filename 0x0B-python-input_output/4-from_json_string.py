@@ -17,5 +17,5 @@ def from_json_string(my_str):
     Returns:
         object : an object
     """
-    l_dile = json.load(my_str)
+    l_dile = json.loads(my_str)
     return l_dile
