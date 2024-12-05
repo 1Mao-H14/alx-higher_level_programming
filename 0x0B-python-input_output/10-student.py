@@ -23,14 +23,15 @@ class Student():
         """
         Retrieves the dictionary representation of a Student instance.
 
-        If `attrs` is provided, only the attributes specified in `attrs` are returned.
+        If `attrs` is provided, only the attributes `attrs` are returned.
         all attributes must be retrieved.
 
         Args:
-            attri (str) : the attribute to get 
+            attri (str) : the attribute to get
 
         Returns:
-            dict: if is a list of strings, only attribute names contained in this list must be retrieved. in 
+            dict: if is a list of strings,
+            only attribute names contained in this list must be retrieved.
             a dictionary representation
             else attributes must be retrieved
         """
@@ -39,10 +40,8 @@ class Student():
             di = {}
             # Loop over the list of attribute names passed in attrs
             for e in attrs:
-                # Check if e is a string and if the attribute exists in the instance
                 if isinstance(e, str) and hasattr(self, e):
-                    di[e] = getattr(self, e)  # Add the attribute and its value to the dictionary
+                    di[e] = getattr(self, e)
             return di
         else:
-            # If no attrs are provided, return all attributes of the student instance
             return self.__dict__
