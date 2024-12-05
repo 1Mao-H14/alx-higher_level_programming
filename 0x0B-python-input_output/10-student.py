@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+""""A module which containes student class and to_json function"""
+
+
 class Student():
     """"class thats represent Student"""
 
