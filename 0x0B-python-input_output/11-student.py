@@ -2,8 +2,6 @@
 
 """"A module which containes student class and to_json function"""
 
-import json
-
 
 class Student:
     """"class thats represent Student"""
