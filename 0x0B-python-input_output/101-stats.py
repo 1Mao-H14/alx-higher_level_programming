@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-""""A module which containes a script that reads stdin line by line and computes metrics:"""
+"""A module which containes a script that reads stdin line by line and computes metrics:"""
 
 
-from sys import stdini
+from sys import stdin
 from collections import Counter
 
 
