@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""""A module which containes student class and to_json function"""
+""""A module which containes a script that reads stdin line by line and computes metrics:"""
 
 
 from sys import stdini
