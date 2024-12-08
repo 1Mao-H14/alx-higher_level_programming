@@ -3,12 +3,11 @@
 """A module which containes a script that reads stdin line by line and computes metrics:"""
 
 
-from sys import stdin
+from sys
 from collections import Counter
 
 
-file = stdin
-lines = file.readlines()
+lines = sys.stdin.readlines()
 list_val = []
 size = 0
 c = 0
