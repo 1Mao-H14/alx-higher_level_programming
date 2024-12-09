@@ -1,36 +1,53 @@
 #!/usr/bin/python3
 
-"""A module which containes a script that reads stdin line by line and computes metrics:"""
+"""A module which contains a script that reads stdin
+line by line and computes metrics"""
 
-
-from sys
+import sys
 from collections import Counter
 
-
-lines = sys.stdin.readlines()
+file = sys.stdin
 list_val = []
 size = 0
 c = 0
-try:
-    for i in lines:
-        if c < 10:
-            ln_val = i.strip().split()
-            size += int(ln_val[-1])
-            list_val.append(int(ln_val[-2]))
-            c += 1
-    c1 = Counter(list_val)
-    # sorting the dict
-    map_val = dict(c1)
-    sorted_key_map = sorted(map_val)
-    new_sorted = {}
-    for e in sorted_key_map:
-        new_sorted[e] = map_val[e]
 
-    c = 0
-    print('File size: {:d}'.format(size))
-    for s, c in new_sorted.items():
-        print('{:d}: {:d}'.format(s, c))
+try:
+    for i in file:
+        ln_val = i.strip().split()
+        size += int(ln_val[-1])
+        list_val.append(int(ln_val[-2]))
+        c += 1
+
+        if c == 10:  # Process a full batch of 10 lines
+            c1 = Counter(list_val)
+            map_val = dict(c1)
+            sorted_key_map = sorted(map_val)
+
+            print('File size: {:d}'.format(size))
+            for s in sorted_key_map:
+                print('{:d}: {:d}'.format(s, map_val[s]))
+
+            # Reset counters for the next batch
+            c = 0
+            list_val = []
+
+    # After the loop, handle any leftover lines
+    if list_val:
+        c1 = Counter(list_val)
+        map_val = dict(c1)
+        sorted_key_map = sorted(map_val)
+
+        print('File size: {:d}'.format(size))
+        for s in sorted_key_map:
+            print('{:d}: {:d}'.format(s, map_val[s]))
 
 except KeyboardInterrupt:
-    c = 0
-    print('File size: {:d}'.format(size))
+    # Handle any leftover lines before exiting
+    if list_val:
+        c1 = Counter(list_val)
+        map_val = dict(c1)
+        sorted_key_map = sorted(map_val)
+
+        print('File size: {:d}'.format(size))
+        for s in sorted_key_map:
+            print('{:d}: {:d}'.format(s, map_val[s]))
