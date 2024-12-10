@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """A Module which containes Rectangle class"""
-import Base
+import base
 
 
 class Rectangle(Base):
