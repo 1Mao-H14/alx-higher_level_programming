@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """A Module which containes Rectangle class"""
-from base import Base
+import Base
+
 
 class Rectangle(Base):
     """"A class thats represent a Rectangle"""
