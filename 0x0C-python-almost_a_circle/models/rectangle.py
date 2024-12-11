@@ -27,22 +27,24 @@ class Rectangle(Base):
         self.__width = width
 
         # validate height then instantate
-        if (height <= 0):
-            raise ValueError('height must be > 0')
         if not isinstance(height, int):
             raise TypeError('height must be an integer')
+        if (height <= 0):
+            raise ValueError('height must be > 0')
         self.__height = height
+
         # validate x then instantate
-        if (x < 0):
-            raise ValueError('x must be >= 0')
         if not isinstance(x, int):
             raise TypeError('x must be an integer')
+        if (x < 0):
+            raise ValueError('x must be >= 0')
         self.__x = x
+
         # validate y then instantate
-        if (y < 0):
-            raise ValueError('y must be >= 0')
         if not isinstance(y, int):
             raise TypeError('y must be an integer')
+        if (y < 0):
+            raise ValueError('y must be >= 0')
         self.__y = y
         super().__init__(id)
 
