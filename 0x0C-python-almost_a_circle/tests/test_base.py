@@ -14,3 +14,5 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b.id, 2)
         c = Base(89)
         self.assertEqual(c.id, 89)
+if __name__ == '__main__':
+    unittest.main()
