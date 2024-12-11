@@ -2,7 +2,7 @@
 
 """Defines the Rectangle class, inheriting from Base."""
 
-from models.base import Base
+from base import Base
 
 class Rectangle(Base):
     """Represents a rectangle."""
