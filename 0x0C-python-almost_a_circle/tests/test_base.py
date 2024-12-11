@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """"a module which containes tests of the base class"""
-import module.base
+from models.base import Base
 import unittest
 
 
