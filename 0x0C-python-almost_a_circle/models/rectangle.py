@@ -106,5 +106,5 @@ class Rectangle(Base):
 
     def display(self):
         """ prints in stdout the Rectangle instance with the character #"""
-        for o in range(self.hight):
+        for o in range(self.height):
             print(self.width * '#')
