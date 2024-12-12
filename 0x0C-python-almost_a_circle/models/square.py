@@ -6,7 +6,7 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """A class representing a square"""
     def __init__(size, x=0, y=0, id=None):
-        super().__init__(self, width=size, height=size, x=x, y=y, id=id)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         msg = '[Square] ({:d}) {:d}/{:d} - {:d}'
