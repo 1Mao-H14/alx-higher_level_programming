@@ -13,3 +13,11 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """A fucntion that returns the JSON string representation of list_dictionaries"""
+        import json
+        if not list_dictionaries:
+            return "[]"
+        val = json.dumps(list_dictionaries)
+        return val
