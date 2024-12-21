@@ -141,3 +141,6 @@ class Rectangle(Base):
                     self.x = v
                 elif i == 'y':
                     self.y = v
+
+    def to_dictionary(self):
+        return self.__dict__
