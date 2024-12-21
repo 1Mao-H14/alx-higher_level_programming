@@ -90,7 +90,7 @@ class Square(Rectangle):
         """ returns the dictionary representation of a Rectangle"""
         return {
             'id': self.id,
-            'size': self.__width,
+            'size': self.width,  # Use the public property for clarity
             'x': self.__x,
             'y': self.__y
         }
