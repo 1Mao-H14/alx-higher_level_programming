@@ -60,3 +60,28 @@ class Square(Rectangle):
     def __str__(self):
         msg = '[Square] ({:d}) {:d}/{:d} - {:d}'
         return msg.format(self.id, self.x, self.y, self.width)
+    def update(self, *args, **kwargs):
+    """
+    Updates the attributes of the object.
+
+    Parameters:
+    - *args: Positional arguments to update
+     attributes in the order ['id', 'size', 'x', 'y'].
+    - **kwargs: Keyword arguments
+     to update attributes by name.
+
+    Behavior:
+    - If `args` is non-empty,
+     updates attributes based on their order.
+    - If `args` is empty, updates
+     attributes based on `kwargs` keys.
+    """
+    ls_ele = ['id', 'size', 'x', 'y']
+    if len(args) != 0:
+        for e in range(len(args)):
+            setattr(self, ls_ele[e], args[e])
+    else:
+        for e in ls_ele:
+            if e in kwargs:
+                setattr(self, e, kwargs[e])
+
