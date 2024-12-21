@@ -85,3 +85,12 @@ class Square(Rectangle):
             for e in ls_ele:
                 if e in kwargs:
                     setattr(self, e, kwargs[e])
+
+    def to_dictionary(self):
+        """ returns the dictionary representation of a Rectangle"""
+        return {
+            'id': self.id,
+            'size':self.__width,
+            'x': self.__x,
+            'y': self.__y
+                }
