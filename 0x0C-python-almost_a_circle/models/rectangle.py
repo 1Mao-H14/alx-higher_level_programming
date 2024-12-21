@@ -143,4 +143,5 @@ class Rectangle(Base):
                     self.y = v
 
     def to_dictionary(self):
+        """ returns the dictionary representation of a Rectangle"""
         return self.__dict__
