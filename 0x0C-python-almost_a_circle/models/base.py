@@ -31,7 +31,7 @@ class Base:
         from models.square import square
 
         if issubclass(cls, Base):
-            name = '{}.json'.formate(str(cls))
+            name = '{}.json'.format(str(cls))
             with open(name, 'a', encoding=utf-8) as f:
                 arr = []
                 for i in list_objs:
