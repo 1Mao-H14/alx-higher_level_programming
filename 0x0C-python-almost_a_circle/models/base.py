@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 """a module which containes Base class"""
+from models.square import square
 
 
 class Base:
@@ -23,3 +24,14 @@ class Base:
             return "[]"
         val = json.dumps(list_dictionaries)
         return val
+
+    @classmethode
+    def save_to_file(cls, list_objs):
+    if issubclass(cls, Base):
+        with open('{}.json'.formate(str(cls)), 'a', encoding=utf-8) as f:
+            arr = []
+            for i in list_objs:
+                d_v = i.to_dictionary()
+                js_v = d_v.to_json_string()
+                arr.append(js_v)
+            f.write(arr)
