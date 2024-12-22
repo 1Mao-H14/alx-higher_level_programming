@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 """a module which containes Base class"""
-import square
-
+from models import square
 
 class Base:
     """A class which represent Base"""
