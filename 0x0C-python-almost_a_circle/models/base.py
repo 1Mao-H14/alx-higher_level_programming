@@ -24,7 +24,7 @@ class Base:
         val = json.dumps(list_dictionaries)
         return val
 
-    @classmethode
+    @classmethod
     def save_to_file(cls, list_objs):
         """ class method def save_to_file(cls, list_objs): 
             that writes the JSON string representation of list_objs to a file"""
