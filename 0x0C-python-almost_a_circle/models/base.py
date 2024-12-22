@@ -27,11 +27,13 @@ class Base:
 
     @classmethode
     def save_to_file(cls, list_objs):
-    if issubclass(cls, Base):
-        with open('{}.json'.formate(str(cls)), 'a', encoding=utf-8) as f:
-            arr = []
-            for i in list_objs:
-                d_v = i.to_dictionary()
-                js_v = d_v.to_json_string()
-                arr.append(js_v)
-            f.write(arr)
+        """ class method def save_to_file(cls, list_objs): 
+            that writes the JSON string representation of list_objs to a file"""
+        if issubclass(cls, Base):
+            with open('{}.json'.formate(str(cls)), 'a', encoding=utf-8) as f:
+                arr = []
+                for i in list_objs:
+                    d_v = i.to_dictionary()
+                    js_v = d_v.to_json_string()
+                    arr.append(js_v)
+                f.write(arr)
