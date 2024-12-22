@@ -26,7 +26,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ class method def save_to_file(cls, list_objs): 
+        """ class method def save_to_file(cls, list_objs):
             that writes the JSON string representation of list_objs to a file"""
         from models.square import square
 
@@ -34,8 +34,9 @@ class Base:
             name = '{}.json'.format(str(cls))
             with open(name, 'a', encoding=utf-8) as f:
                 arr = []
-                for i in list_objs:
-                    d_v = i.to_dictionary()
-                    js_v = d_v.to_json_string()
-                    arr.append(js_v)
+                if list_objs is not None:
+                    for i in list_objs:
+                        d_v = i.to_dictionary()
+                        js_v = d_v.to_json_string()
+                        arr.append(js_v)
                 f.write(arr)
