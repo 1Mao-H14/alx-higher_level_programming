@@ -40,15 +40,13 @@ class Base:
 
         if issubclass(cls, Base):
                 name = '{}.json'.format(cls.__name__)
-                if os.path.exists(name):
-                    f = open(name, 'w', encoding='utf-8')
-                    if list_objs is not None:
-                        arr = []
-                        for i in list_objs:
-                            d_v = i.to_dictionary()
-                            arr.append(d_v)
-                        arr = cls.to_json_string(arr)
-                    elif list_objs is None:
-                        arr = cls.to_json_string([])
-                    f.write(arr)
-                    f.close()
+                    with open(name, 'w', encoding='utf-8') as f:
+                        if list_objs is not None:
+                            arr = []
+                            for i in list_objs:
+                                d_v = i.to_dictionary()
+                                arr.append(d_v)
+                            arr = cls.to_json_string(arr)
+                        else:
+                            arr = cls.to_json_string([])
+                        f.write(arr)
