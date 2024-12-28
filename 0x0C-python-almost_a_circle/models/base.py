@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+import json
 
 """a module which containes Base class"""
 
@@ -27,8 +28,15 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """ class method def save_to_file(cls, list_objs):
-            that writes the JSON string representation of list_objs to a file"""
+        """
+        Write the JSON string representation of `list_objs` to a file.
+
+        Args:
+            list_objs (list): List of objects, each having a `to_dictionary()` method.
+        
+        Creates or overwrites a file named `<ClassName>.json` with the JSON data.
+        If `list_objs` is None, writes an empty list (`[]`).
+        """
         from models.square import Square
 
         if issubclass(cls, Base):
