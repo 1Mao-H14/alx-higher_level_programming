@@ -51,3 +51,10 @@ class Base:
                 else:
                     arr = cls.to_json_string([])
                 f.write(arr)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """that returns the list of the JSON string representation json_string
+        """
+        rst = json.loads(json_string)
+        return rst
