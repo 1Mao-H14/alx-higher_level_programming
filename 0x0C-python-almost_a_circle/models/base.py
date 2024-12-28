@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-import os
-import json
-
 """a module which containes Base class"""
 
+import os
+import json
 
 class Base:
     """A class which represent Base"""
