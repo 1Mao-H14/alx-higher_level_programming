@@ -4,6 +4,7 @@
 import os
 import json
 
+
 class Base:
     """A class which represent Base"""
     __nb_objects = 0
@@ -31,22 +32,22 @@ class Base:
         Write the JSON string representation of `list_objs` to a file.
 
         Args:
-            list_objs (list): List of objects, each having a `to_dictionary()` method.
-        
-        Creates or overwrites a file named `<ClassName>.json` with the JSON data.
+            list_objs (list): List of objects
+
+        Creates or overwrites file named ClassName.json` with the JSON data.
         If `list_objs` is None, writes an empty list (`[]`).
         """
         from models.square import Square
 
         if issubclass(cls, Base):
-                name = '{}.json'.format(cls.__name__)
-                with open(name, 'w', encoding='utf-8') as f:
-                    if list_objs is not None:
-                        arr = []
-                        for i in list_objs:
-                            d_v = i.to_dictionary()
-                            arr.append(d_v)
-                        arr = cls.to_json_string(arr)
-                    else:
-                        arr = cls.to_json_string([])
-                    f.write(arr)
+            name = '{}.json'.format(cls.__name__)
+            with open(name, 'w', encoding='utf-8') as f:
+                if list_objs is not None:
+                    arr = []
+                    for i in list_objs:
+                        d_v = i.to_dictionary()
+                        arr.append(d_v)
+                    arr = cls.to_json_string(arr)
+                else:
+                    arr = cls.to_json_string([])
+                f.write(arr)
