@@ -29,7 +29,7 @@ class Base:
     def save_to_file(cls, list_objs):
         """ class method def save_to_file(cls, list_objs):
             that writes the JSON string representation of list_objs to a file"""
-        from models.square import square
+        from models.square import Square
 
         if issubclass(cls, Base):
                 name = '{}.json'.format(cls.__name__)
