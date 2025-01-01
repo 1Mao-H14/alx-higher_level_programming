@@ -71,3 +71,17 @@ class Base:
             dum = cls(1)
         dum.update(**dictionary)
         return dum
+
+    @classmethod
+    def load_from_file(cls):
+        """class method def load_from_file(cls): that returns a list of instances"""
+        cls_name = '{}.json'.format(cls.__name__)
+        if not os.path.exists(cls_name):
+            return []
+        with open(cls_name, 'r', encoding='utf-8') as f:
+            js_str = f.read()
+            py_str = cls.from_json_string(js_str)
+            ls_i = []
+            for i in py_str:
+                ls_i.append(cls.create(**i))
+        return ls_i
