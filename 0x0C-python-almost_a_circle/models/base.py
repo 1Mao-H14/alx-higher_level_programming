@@ -63,9 +63,11 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        """class method def create(cls, **dictionary): that returns an
+        """ the class method def create(cls, **dictionary): that returns an
         instance with all attributes already set"""
-        dum = cls()
+        if cls.__name__ == 'Rectangle':
+            dum = cls(1,1)
+        elif cls.__name__ == 'Square':
+            dum = cls(1)
         up_dum = dum.update(**dictionary)
         return up_dum
-
