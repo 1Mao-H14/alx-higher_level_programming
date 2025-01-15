@@ -4,7 +4,7 @@
 
 def find_peak(values):
     """
-    Finds a peak element in a list of integers. A peak is an element that is greater than its neighbors.
+    Finds a peak element in a list of integers. A peak is an element that.
 
     Parameters:
     - values (list): A list of integers.
@@ -27,7 +27,8 @@ def find_peak(values):
     left_index, right_index = 0, total_elements - 1
     while left_index < right_index:
         middle_index = left_index + (right_index - left_index) // 2
-        if values[middle_index] > values[middle_index - 1] and values[middle_index] > values[middle_index + 1]:
+        if values[middle_index] > values[middle_index - 1] and
+        values[middle_index] > values[middle_index + 1]:
             return values[middle_index]
         if values[middle_index - 1] > values[middle_index + 1]:
             right_index = middle_index
