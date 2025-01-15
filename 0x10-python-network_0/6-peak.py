@@ -4,7 +4,7 @@
 
 def find_peak(values):
     """
-    Finds a peak element in a list of integers. A peak is an element that.
+    function that finds a peak in a list of unsorted integers.
 
     Parameters:
     - values (list): A list of integers.
