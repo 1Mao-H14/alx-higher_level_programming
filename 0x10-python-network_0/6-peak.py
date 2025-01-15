@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""Module that finds a peak in a list of unsorted integers."""
+"""Module that finds a peak in a list of integers"""
 
-def find_peak(list_of_integers):
+
+def find_peak(values):
     """
     Finds a peak element in a list of integers. A peak is an element that is greater than its neighbors.
 
     Parameters:
-    - list_of_integers (list): A list of integers.
+    - values (list): A list of integers.
 
     Returns:
     - int: A peak element. If the list is empty, returns `None`.
@@ -19,19 +20,17 @@ def find_peak(list_of_integers):
     >>> find_peak([1, 2, 3, 4, 5])
     5
     """
-    ls = list_of_integers
-    if ls == []:
+    if not values:
         return None
-    length = len(ls)
+    total_elements = len(values)
 
-    s = 0
-    e = length - 1
-    while s < e:
-        between = s + (e - s) // 2
-        if ls[between] > ls[between - 1] and ls[between] > ls[between + 1]:
-            return ls[between]
-        if ls[between - 1] > ls[between + 1]:
-            end = between
+    left_index, right_index = 0, total_elements - 1
+    while left_index < right_index:
+        middle_index = left_index + (right_index - left_index) // 2
+        if values[middle_index] > values[middle_index - 1] and values[middle_index] > values[middle_index + 1]:
+            return values[middle_index]
+        if values[middle_index - 1] > values[middle_index + 1]:
+            right_index = middle_index
         else:
-            s = between + 1
-    return ls[s]
+            left_index = middle_index + 1
+    return values[left_index]
